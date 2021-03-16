@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar: React.FC = () => {
 
@@ -7,8 +8,8 @@ const Navbar: React.FC = () => {
     <div className="nav-wrapper blue-grey lighten-1 px1">
       <a href="/" className="brand-logo">React + TS</a>
       <ul  className="right hide-on-med-and-down">
-        <li><a href="/">Todo list</a></li>
-        <li><a href="/">Info</a></li>
+        <li><NavLink to="/">Todo list</NavLink></li>
+        <li><NavLink to="/about">Info</NavLink></li>
       </ul>
     </div>
   </nav>
